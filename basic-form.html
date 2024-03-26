@@ -4,6 +4,11 @@
     <title>Basic Form</title>
   </head>
   <body>
+
+    <header>
+        <h1>Sign Up Form</h1>
+    </header>
+    <main>
     <form action="#">
       <div>
         <label
@@ -84,9 +89,24 @@
         </label>
       </div>
       <div>
+        <label
+          >Password
+          <input
+            type="password"
+            placeholder="Enter Password"
+            minlength="5"
+            maxlength="50"
+            name="password"
+            
+            required
+          />
+        </label>
+      </div>
+      <div>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
       </div>
     </form>
+</main>
   </body>
 </html>
