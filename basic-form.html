@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Form</title>
+  </head>
+  <body>
+    <form action="#">
+      <div>
+        <label
+          >First Name
+          <input
+            type="text"
+            placeholder="Enter First Name"
+            maxlength="50"
+            name="firstName"
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label
+          >Last Name
+          <input
+            type="text"
+            placeholder="Enter Last Name"
+            maxlength="50"
+            name="lastName"
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label
+          >Age
+          <input
+            type="number"
+            min="10"
+            max="99"
+            placeholder="Enter Age"
+            required
+            name="age"
+          />
+        </label>
+      </div>
+      <div>
+        <p>Gender</p>
+        <label
+          >Male
+          <input type="radio" value="male" name="gender" required="required" />
+        </label>
+        <label
+          >Female
+          <input type="radio" value="female" name="gender" />
+        </label>
+        <label
+          >Others
+          <input type="radio" value="others" name="gender" />
+        </label>
+      </div>
+      <div>
+        <label
+          >Email
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+        </label>
+      </div>
+      <div>
+        <label
+          >Mobile Number
+          <input
+            type="tel"
+            placeholder="Enter Mobile Number"
+            minlength="10"
+            maxlength="10"
+            name="email"
+            pattern="^[0-9]{10}$"
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
